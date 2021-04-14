@@ -19,16 +19,27 @@
 
 
 
-#problem 3 
+// #problem 3 
 
 
-//Difference b/w textContent and innerText is
-// innerText pays attention to the styling whereas
-//textContent does not 
+// //Difference b/w textContent and innerText is
+// // innerText pays attention to the styling whereas
+// //textContent does not 
 
-var header = document.getElementById('main-header');
-header.style.borderBottom = 'solid 3px #000';
+// var header = document.getElementById('main-header');
+// header.style.borderBottom = 'solid 3px #000';
 
-var elements = document.getElementsByClassName('title');
-elements[0].style.fontWeight = 'bold';
-elements[0].style.color = 'green';
+// var elements = document.getElementsByClassName('title');
+// elements[0].style.fontWeight = 'bold';
+// elements[0].style.color = 'green';
+
+
+
+
+
+var items = document.getElementsByClassName('list-group-item');
+items[2].style.backgroundColor = 'green';
+
+for (var i = 0; i < items.length; i++) {
+    items[i].style.fontWeight = 'bold';
+}
